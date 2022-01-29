@@ -1,0 +1,45 @@
+.header {
+    &__logo {
+        position: relative;
+        top: 46px;
+        left: 248px;
+        z-index: 1;
+        display: block;
+        max-width: 100%;
+         text-decoration: none;
+    }
+}
+
+.header-nav {
+    &__list {
+        display: flex;
+        justify-content: right;
+        list-style-type: none;
+        position: absolute;
+        top: 46px;
+        left: 1155px;
+        z-index: 1;
+
+    }
+    &__item {
+        display: inline-block;
+      
+
+    }
+    &__link {
+        text-decoration: none;
+        line-height: 17px;
+        padding: 10px 15px;   
+        font-family: var(--main-fonts)
+        color: var(--main-color)
+        &.--modifier {
+            border: 2px solid black;
+            box-sizing: border-box;
+            border-radius: 40%;
+          
+           
+        }
+
+    }
+        
+}
