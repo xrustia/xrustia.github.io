@@ -1,34 +1,46 @@
+.header {
+  position: relative;
+}
 .header__logo {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
   position: absolute;
+  max-width: 100%;
   top: 46px;
   left: 248px;
-  z-index: 1;
-  display: block;
-  max-width: 100%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
   text-decoration: none;
 }
 
-.header-nav__list {
-  display: flex;
-  justify-content: right;
-  list-style-type: none;
+.header-nav {
   position: absolute;
+  z-index: 2;
   top: 46px;
-  left: 1155px;
-  z-index: 1;
+  right: 0;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+}
+.header-nav__list {
+  list-style-type: none;
 }
 .header-nav__item {
   display: inline-block;
+  padding: 19px;
+  text-decoration: none;
 }
 .header-nav__link {
   display: block;
   text-decoration: none;
-  line-height: 17px;
-  padding: 10px 15px;
-  font-family: var(--main-fonts);
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  color: #fff;
 }
 .header-nav__link.--modifier {
-  border: 2px solid black;
-  box-sizing: border-box;
-  border-radius: 40%;
+  width: 90px;
+  height: 36px;
+  border: 2px solid white;
+  border-radius: 40px;
 }

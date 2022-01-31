@@ -4,79 +4,271 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: 0 auto;
+.header {
+  margin-bottom: 95px;
+  height: 100vh;
+  object-fit: cover;
 }
 
-.container {
-  max-width: 940px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  padding: 0 20px;
-}
-
-.column-welcome__h1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 470px;
-  height: 126px;
+.header-item {
   position: relative;
-  left: 400px;
-  right: 0;
-  top: -500px;
-  bottom: 0;
-  z-index: 3;
-  transform: translate(-50px -50px);
-  font-family: var(--main-fonts);
+  height: 700px;
+}
+.header-item__image {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.header-item__title {
   font-size: 52px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
   color: white;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-bottom: 28px;
 }
-.column-welcome__p {
-  width: 396px;
-  color: white;
-  position: relative;
-  right: 0;
-  left: 500px;
-  bottom: 450px;
+.header-item__title2 {
+  font-size: 24px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: #F7F3F2;
+  z-index: 2;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.column-welcome__button {
-  position: relative;
-  top: -380px;
-  left: 590px;
-  border: 2px #FF4E50;
-  border-radius: 40%;
+.header-item__title3 {
+  font-size: 14px;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  color: #F7F3F2;
+  z-index: 2;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  border: 1px solid #FF4E50;
   background-color: #FF4E50;
   width: 225px;
   height: 40px;
+  border-radius: 40px;
+  padding: 10px;
 }
 
-.row__photo {
-  justify-content: center;
-  align-items: center;
-  object-fit: cover;
-  object-position: center;
-  padding: 0 5px;
-  margin: 0 -5px;
-  width: 33.3333%;
+.dreamshare {
+  margin-bottom: 95px;
 }
-.row__p1 {
+.dreamshare__title {
+  text-align: center;
+  margin-bottom: 35px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.dreamshare-item {
   position: relative;
-  top: -100px;
-  bottom: -50px;
-  right: -100px;
-  transform: translate(-50px);
+  height: 400px;
+  margin-bottom: 20px;
+}
+.dreamshare-item__title3 {
+  text-align: center;
+  padding: 3px;
+  letter-spacing: 2px;
+  line-height: 12px;
+  width: 70px;
+  height: 20px;
+  font-size: 10px;
+  font-weight: normal;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
   color: white;
+  z-index: 2;
+  position: absolute;
+  top: 56%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #FF4E50;
+  border-radius: 40px;
+  background-color: #FF4E50;
+}
+.dreamshare-item__image {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.dreamshare-item__title {
+  width: 250px;
+  height: 57px;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  z-index: 2;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.dreamshare-item__title2 {
+  width: 250px;
+  height: 57px;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 300;
+  font-family: var(--primary-fonts);
+  color: #E3E3E3;
+  z-index: 2;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-h2 {
+.meet {
+  margin-bottom: 95px;
+}
+.meet__title {
+  text-align: center;
+  margin-bottom: 35px;
+  font-family: "Montserrat", sans-serif;
+}
+.meet__title3 {
+  margin-top: 36px;
+  font-size: 14px;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  color: #FF4E50;
+  text-decoration: none;
+  border: 1px solid #FF4E50;
+  background-color: #ffff;
+  width: 180px;
+  height: 40px;
+  border-radius: 40px;
+  padding: 10px;
+}
+
+.meet-item {
+  position: relative;
+  height: 205px;
+  margin-bottom: 36px;
+  text-align: center;
+}
+.meet-item__image {
+  margin-bottom: 17px;
+  width: 120px;
+  align-items: center;
+  border-radius: 50%;
+}
+.meet-item__title {
+  width: 221px;
+  height: 18px;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 12px;
+  text-align: center;
+  color: #444444;
+}
+.meet-item__title2 {
+  width: 221px;
+  height: 38px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: #666666;
+}
+
+.holiday {
+  margin-bottom: 95px;
+}
+.holiday__title {
+  text-align: center;
+  margin-bottom: 44px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.holiday-item {
+  position: relative;
+  height: 300px;
+  margin-bottom: 20px;
+}
+.holiday-item__image {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.holiday-item__title {
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form-block {
+  max-width: 485px;
+  margin: auto;
+  margin-bottom: 100px;
+  text-align: center;
+}
+.form-block__title {
+  margin-bottom: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+  color: #444444;
+}
+.form-block__subtitle {
+  margin-bottom: 25px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  color: #666666;
+}
+
+.form__row {
   display: flex;
-  justify-content: center;
-  padding-bottom: 43px;
+  flex-wrap: wrap;
 }
-
-.row-container__photo3 {
-  padding: 0 50px;
+.form__input {
+  width: 299px;
+  height: 40px;
+  padding-left: 14px;
+  color: #999999;
+}
+.form__button {
+  font-size: 14px;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  color: #F7F3F2;
+  text-decoration: none;
+  border: 1px solid #FF4E50;
+  background-color: #FF4E50;
+  width: 172px;
+  height: 40px;
+  border-radius: 40px;
+  margin-left: 10px;
 }
